@@ -20,7 +20,7 @@ tmux_conf_new_session_prompt=false
 #   - true
 #   - false (default)
 #   - disabled (do not modify new-window bindings)
-tmux_conf_new_window_retain_current_path=false
+tmux_conf_new_window_retain_current_path=true
 
 # new window tries to reconnect ssh sessions, possible values are:
 #   - true
@@ -51,7 +51,7 @@ tmux_conf_new_pane_reconnect_ssh=false
 # automatic detection relies on the COLORTERM environment variable being defined
 # to 'truecolor' or '24bit' or '$ tput colors' answering '16777216'
 # see https://github.com/termstandard/colors
-tmux_conf_24b_colour=auto
+tmux_conf_24b_colour=true
 
 
 # -- theming -------------------------------------------------------------------
@@ -346,7 +346,7 @@ tmux_conf_theme_clock_style="24"
 #   - disabled
 # on macOS, this requires installing reattach-to-user-namespace, see README.md
 # on Linux, this requires xsel, xclip or wl-copy
-tmux_conf_copy_to_os_clipboard=false
+tmux_conf_copy_to_os_clipboard=true
 
 
 # -- user customizations -------------------------------------------------------
