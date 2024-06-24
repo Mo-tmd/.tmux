@@ -387,6 +387,8 @@ set-option -g update-environment "DISPLAY \
                                   OldDisplay \
                                  "
 
+bind s choose-tree -Zs -O time
+
 # -- tpm -----------------------------------------------------------------------
 
 # while I don't use tpm myself, many people requested official support so here
