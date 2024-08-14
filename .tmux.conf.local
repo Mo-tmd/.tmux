@@ -370,6 +370,12 @@ tmux_conf_copy_to_os_clipboard=true
 tmux_conf_urlscan_options="--compact --dedupe"
 
 
+# -- urlscan -------------------------------------------------------------------
+
+# options passed to urlscan
+tmux_conf_urlscan_options="--compact --dedupe"
+
+
 # -- user customizations -------------------------------------------------------
 
 # this is the place to override or undo settings
