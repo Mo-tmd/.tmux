@@ -417,6 +417,13 @@ set-option -g update-environment "DISPLAY \
 
 bind s choose-tree -Zs -O time
 
+# See https://unix.stackexchange.com/q/570920
+set -g status off
+set -g prefix None
+bind -n C-b set status on \;\
+    switch-client -T prefix \;\
+    run-shell -d 1 -b "while [ $(tmux display-message -p '##{client_prefix}') -eq 1 ]; do sleep 0.5; done; tmux set status off"
+
 # -- tpm -----------------------------------------------------------------------
 
 # while I don't use tpm myself, many people requested official support so here
